@@ -1,0 +1,10 @@
+
+		(function() {
+			const url = new URL(window.location.href);
+			const pixel = "https://track.trackingtraffo.com/pixel?auth=886u5crv&event=visit&uid=undefined&tid=%7BTRANSACTION_ID%7D&cur=undefined&amount=0&site=" + window.location.host + "&ln=" + navigator.language;
+			const img = document.createElement('img');
+			img.style.width = '0px';
+			img.style.height = '0px';
+			img.src = pixel;
+			document.body.appendChild(img);
+		})();
